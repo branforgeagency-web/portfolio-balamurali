@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BALAMURALI — Founder · Builder · Mentor</title>
-<meta name="description" content="Balamurali — founder of ThoughtFlows, ThoughtSpace, Talentera, Sonic Prints and StoryLens. Five companies, one vision.">
+<meta name="description" content="Balamurali — founder of ThoughtFlows, ThoughtWorth Healthcare, ThoughtSpace, FoundryX, BrandForge, Sonic Prints and StoryLens. Seven companies, one vision.">
 <meta name="theme-color" content="#000000">
 <link rel="preload" href="assets/hero-poster.jpg" as="image">
 <style>
@@ -156,8 +156,8 @@ html:not(.boot) .veil{opacity:0}
 .sechead h2{font-family:var(--f-word);font-weight:400;font-size:clamp(54px,9vw,150px);line-height:.86;margin:.15em 0 0;color:#fff}
 .sechead h2 em{font-style:normal;color:var(--red)}
 .sechead p{font-family:var(--f-serif);font-size:clamp(15px,1.2vw,19px);line-height:1.6;color:#cccccc;max-width:42ch;margin:0}
-.deck{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.2vw,18px);perspective:1400px}
-.card{position:relative;display:flex;flex-direction:column;min-height:clamp(380px,56vh,520px);padding:26px 22px 24px;border:1px solid rgba(245,245,245,.12);
+.deck{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(10px,1.2vw,18px);perspective:1400px}
+.card{grid-column:span 3;position:relative;display:flex;flex-direction:column;min-height:clamp(380px,56vh,520px);padding:26px 22px 24px;border:1px solid rgba(245,245,245,.12);
   background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,0) 40%),linear-gradient(180deg,#111111,#0a0a0a);overflow:hidden;cursor:default;
   opacity:0;transform:translateY(var(--rise,120px)) rotateX(14deg);transform-style:preserve-3d;
   transition:opacity 1.1s ease,transform 1.6s var(--ease),border-color .4s,filter .5s}
@@ -172,6 +172,7 @@ html:not(.boot) .veil{opacity:0}
 .card .logo{position:relative;z-index:1;display:flex;box-sizing:border-box;flex:none;overflow:hidden;height:clamp(110px,13vh,140px);margin:-26px -22px 0;padding:18px 20px;background:#fff;border-bottom:3px solid var(--red);transition:background .4s}
 .card .logo img{display:block;width:100%;height:100%;min-height:0;object-fit:contain;transition:transform .7s var(--ease)}
 .card:hover .logo img{transform:scale(1.06)}
+.card:nth-child(n+5){grid-column:span 4}
 .card .no{font-family:var(--f-word);font-size:clamp(46px,4.4vw,72px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(245,245,245,.28);margin:22px 0 auto}
 .card:hover .no{-webkit-text-stroke-color:var(--red)}
 .card .sec{margin:22px 0 10px}
@@ -250,8 +251,8 @@ html:not(.boot) .veil{opacity:0}
 .eco .pin{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;padding:0 var(--gut);overflow:hidden;
   background:radial-gradient(70% 50% at 50% 60%,rgba(110,80,0,.25),transparent 70%)}
 .eco .sechead{margin-bottom:clamp(40px,9vh,100px)}
-.rail{--d:clamp(86px,8.2vw,128px);position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.rail .line{position:absolute;left:10%;right:10%;top:calc(var(--d)/2 - 1px);height:2px;background:rgba(245,245,245,.1)}
+.rail{--d:clamp(70px,6.4vw,108px);position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.rail .line{position:absolute;left:7%;right:7%;top:calc(var(--d)/2 - 1px);height:2px;background:rgba(245,245,245,.1)}
 .rail .line i{position:absolute;inset:0;background:linear-gradient(90deg,var(--red-d),var(--red),#ffe066);transform-origin:left;transform:scaleX(var(--p,0));box-shadow:0 0 18px rgba(255,196,0,.7)}
 .node{position:relative;text-align:center;padding-top:calc(var(--d) + 26px);opacity:.38;transition:opacity .6s,transform .8s var(--ease);transform:translateY(16px)}
 .node .dot{position:absolute;z-index:1;left:50%;top:0;width:var(--d);height:var(--d);margin-left:calc(var(--d)/-2);box-sizing:border-box;border-radius:50%;background:#fff;border:3px solid rgba(245,245,245,.25);
@@ -261,9 +262,9 @@ html:not(.boot) .veil{opacity:0}
 .node:hover .dot{transform:scale(1.08)}
 .node.on{opacity:1;transform:none}
 .node.on .dot{filter:none;border-color:var(--red);box-shadow:0 0 0 10px rgba(255,196,0,.14),0 0 46px rgba(255,196,0,.65)}
-.node .verb{font-family:var(--f-word);font-size:clamp(30px,3.6vw,62px);line-height:.9;color:#fff;display:block}
+.node .verb{font-family:var(--f-word);font-size:clamp(24px,2.7vw,46px);line-height:.9;color:#fff;display:block}
 .node .who{display:block;margin:12px 0 10px;color:var(--red)}
-.node p{font-family:var(--f-serif);font-size:15px;line-height:1.5;color:#b5b5b5;margin:0 auto;max-width:24ch}
+.node p{font-family:var(--f-serif);font-size:14px;line-height:1.5;color:#b5b5b5;margin:0 auto;max-width:20ch}
 
 /* =========================== FINALE =========================== */
 .fin{position:relative;height:100svh;min-height:600px;overflow:hidden;isolation:isolate;
@@ -303,9 +304,9 @@ html:not(.boot) .veil{opacity:0}
 /* =========================== RESPONSIVE =========================== */
 @media (max-width:1100px){
   .hdr .roles,.hdr .div,.hdr .meta{display:none}
-  .deck{grid-template-columns:repeat(6,1fr)}
-  .card{grid-column:span 2;min-height:360px}
-  .card:nth-child(4),.card:nth-child(5){grid-column:span 3}
+  .deck{grid-template-columns:repeat(2,1fr)}
+  .card,.card:nth-child(n+5){grid-column:span 1;min-height:360px}
+  .card:nth-child(7){grid-column:span 2}
 }
 @media (max-width:760px){
   .hdr nav{display:none}.burger{display:block}
@@ -323,7 +324,7 @@ html:not(.boot) .veil{opacity:0}
   .film .t--l p{display:none}
   .film h2{font-size:clamp(44px,14vw,80px)}
   .deck{grid-template-columns:1fr}
-  .card,.card:nth-child(4),.card:nth-child(5){grid-column:auto;min-height:0}
+  .card,.card:nth-child(n+5),.card:nth-child(7){grid-column:auto;min-height:0}
   .card .no{font-size:48px;margin:16px 0 8px}
   .about{grid-template-columns:1fr}
   .about .ph{min-height:70svh}
@@ -375,7 +376,7 @@ html:not(.boot) .veil{opacity:0}
 <main>
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="home" aria-label="Introduction">
-  <h1 class="sr">Balamurali — founder of ThoughtFlows, ThoughtSpace, Talentera, Sonic Prints and StoryLens. Welcome to my world.</h1>
+  <h1 class="sr">Balamurali — founder of ThoughtFlows, ThoughtWorth Healthcare, ThoughtSpace, FoundryX, BrandForge, Sonic Prints and StoryLens. Welcome to my world.</h1>
   <div class="ember" aria-hidden="true"></div>
   <div class="scuff" aria-hidden="true"></div>
   <p class="word" id="word" aria-hidden="true"><span class="ln">BALA</span><span class="ln">MURALI</span></p>
@@ -394,7 +395,7 @@ html:not(.boot) .veil{opacity:0}
 </section>
 
 <!-- ============================ FILM ============================ -->
-<section class="film" id="film" aria-label="One man, five worlds">
+<section class="film" id="film" aria-label="One man, seven worlds">
   <video id="filmVid" poster="assets/film-poster.jpg" muted loop playsinline autoplay preload="auto" aria-hidden="true"><source src="assets/film.webm" type="video/webm"><source src="assets/film.mp4" type="video/mp4"></video>
   <div class="fveil" id="fveil"></div>
   <div class="shade"></div>
@@ -404,16 +405,16 @@ html:not(.boot) .veil{opacity:0}
     <p class="rv d2">Every company in this group started the same way — a problem he saw up close, and a refusal to leave it unsolved.</p>
   </div>
   <div class="t t--r">
-    <h2 class="rv d2">FIVE<br><em>WORLDS.</em></h2>
-    <p class="rv d3">Education. Workspace. Hiring. Branding. Storytelling. Built one after another, each one feeding the next.</p>
+    <h2 class="rv d2">SEVEN<br><em>WORLDS.</em></h2>
+    <p class="rv d3">Education. Healthcare. Workspace. Startups. Marketing. Branding. Storytelling. Built one after another, each one feeding the next.</p>
   </div>
 </section>
 
 <!-- ============================ VENTURES ============================ -->
 <section class="ventures" id="ventures" aria-labelledby="vh">
   <div class="sechead">
-    <div><span class="cap red">Chapter 02 — The Ventures</span><h2 id="vh">FIVE <em>COMPANIES.</em><br>ONE VISION.</h2></div>
-    <p>From a medical coding classroom in Coimbatore to a group of five companies — every venture built around people, skills and the stories that carry them.</p>
+    <div><span class="cap red">Chapter 02 — The Ventures</span><h2 id="vh">SEVEN <em>COMPANIES.</em><br>ONE VISION.</h2></div>
+    <p>From a medical coding classroom in Coimbatore to a group of seven companies — every venture built around people, skills and the stories that carry them.</p>
   </div>
   <div class="deck" id="deck">
     <article class="card" style="--rise:160px">
@@ -424,25 +425,41 @@ html:not(.boot) .veil{opacity:0}
       <p>Medical Coding Academy training India's next generation of certified coders — with branches across Coimbatore, Hyderabad and Kerala.</p>
       <span class="tag">Learn <b>→</b></span>
     </article>
+    <article class="card" style="--rise:120px">
+      <div class="logo"><img src="assets/logo-thoughtworth.webp" alt="ThoughtWorth Healthcare logo"></div>
+      <span class="no">02</span>
+      <span class="cap red sec">Healthcare</span>
+      <h3>THOUGHTWORTH</h3>
+      <p>ThoughtWorth Healthcare Pvt Ltd — healthcare management and revenue cycle services delivered by trained, certified teams.</p>
+      <span class="tag">Serve <b>→</b></span>
+    </article>
     <article class="card" style="--rise:110px">
       <div class="logo"><img src="assets/logo-thoughtspace.webp" alt="ThoughtSpace logo"></div>
-      <span class="no">02</span>
+      <span class="no">03</span>
       <span class="cap red sec">Workspace</span>
       <h3>THOUGHTSPACE</h3>
       <p>Coworking built for founders, freelancers and teams who need room to think, meet and grow.</p>
       <span class="tag">Work <b>→</b></span>
     </article>
-    <article class="card" style="--rise:200px">
-      <div class="logo"><img src="assets/logo-talentera.webp" alt="Talentera logo"></div>
-      <span class="no">03</span>
-      <span class="cap red sec">Hiring</span>
-      <h3>TALENTERA</h3>
-      <p>A verified-talent hiring platform for Healthcare RCM — multi-stage verification that ends in one trusted badge.</p>
-      <span class="tag">Hire <b>→</b></span>
-    </article>
-    <article class="card" style="--rise:120px">
-      <div class="logo"><img src="assets/logo-sonic.webp" alt="Sonic Prints logo"></div>
+    <article class="card" style="--rise:190px">
+      <div class="logo"><img src="assets/logo-foundryx.webp" alt="FoundryX logo"></div>
       <span class="no">04</span>
+      <span class="cap red sec">Startups</span>
+      <h3>FOUNDRYX</h3>
+      <p>Where founders are forged — a launchpad that helps first-time founders turn an idea into a working business.</p>
+      <span class="tag">Launch <b>→</b></span>
+    </article>
+    <article class="card" style="--rise:140px">
+      <div class="logo"><img src="assets/logo-brandforge.webp" alt="BrandForge logo"></div>
+      <span class="no">05</span>
+      <span class="cap red sec">Marketing</span>
+      <h3>BRANDFORGE</h3>
+      <p>A digital marketing agency turning ideas into digital power — identity, SEO, websites, content and ads.</p>
+      <span class="tag">Grow <b>→</b></span>
+    </article>
+    <article class="card" style="--rise:100px">
+      <div class="logo"><img src="assets/logo-sonic.webp" alt="Sonic Prints logo"></div>
+      <span class="no">06</span>
       <span class="cap red sec">Branding</span>
       <h3>SONIC PRINTS</h3>
       <p>A full branding partner — identity, stationery, packaging, store branding and promotional products under one roof.</p>
@@ -450,7 +467,7 @@ html:not(.boot) .veil{opacity:0}
     </article>
     <article class="card" style="--rise:170px">
       <div class="logo"><img src="assets/logo-storylens.webp" alt="StoryLens Media House logo"></div>
-      <span class="no">05</span>
+      <span class="no">07</span>
       <span class="cap red sec">Media</span>
       <h3>STORYLENS</h3>
       <p>StoryLens Media House — films, reels and brand stories that turn the group's work into pictures people remember.</p>
@@ -463,11 +480,11 @@ html:not(.boot) .veil{opacity:0}
 <section class="group" id="group" aria-labelledby="gh">
   <div class="sechead">
     <div><span class="cap red">Chapter 03 — Inside the Group</span><h2 id="gh">WHAT EACH <em>COMPANY</em><br>DOES.</h2></div>
-    <p>Five companies with five different jobs — and one founder who built each of them to solve a problem he saw first-hand. Pick a company to look inside.</p>
+    <p>Seven companies with seven different jobs — and one founder who built each of them to solve a problem he saw first-hand. Pick a company to look inside.</p>
   </div>
   <div class="gx">
     <div class="gtabs" role="tablist" aria-label="Companies">
-      <button class="gtab" role="tab" id="gt-thoughtflows" aria-controls="gp-thoughtflows" aria-selected="true" tabindex="0"><i>01</i>ThoughtFlows</button><button class="gtab" role="tab" id="gt-thoughtspace" aria-controls="gp-thoughtspace" aria-selected="false" tabindex="-1"><i>02</i>ThoughtSpace</button><button class="gtab" role="tab" id="gt-talentera" aria-controls="gp-talentera" aria-selected="false" tabindex="-1"><i>03</i>Talentera</button><button class="gtab" role="tab" id="gt-sonic" aria-controls="gp-sonic" aria-selected="false" tabindex="-1"><i>04</i>Sonic Prints</button><button class="gtab" role="tab" id="gt-storylens" aria-controls="gp-storylens" aria-selected="false" tabindex="-1"><i>05</i>StoryLens</button>
+      <button class="gtab" role="tab" id="gt-thoughtflows" aria-controls="gp-thoughtflows" aria-selected="true" tabindex="0"><i>01</i>ThoughtFlows</button><button class="gtab" role="tab" id="gt-thoughtworth" aria-controls="gp-thoughtworth" aria-selected="false" tabindex="-1"><i>02</i>ThoughtWorth</button><button class="gtab" role="tab" id="gt-thoughtspace" aria-controls="gp-thoughtspace" aria-selected="false" tabindex="-1"><i>03</i>ThoughtSpace</button><button class="gtab" role="tab" id="gt-foundryx" aria-controls="gp-foundryx" aria-selected="false" tabindex="-1"><i>04</i>FoundryX</button><button class="gtab" role="tab" id="gt-brandforge" aria-controls="gp-brandforge" aria-selected="false" tabindex="-1"><i>05</i>BrandForge</button><button class="gtab" role="tab" id="gt-sonic" aria-controls="gp-sonic" aria-selected="false" tabindex="-1"><i>06</i>Sonic Prints</button><button class="gtab" role="tab" id="gt-storylens" aria-controls="gp-storylens" aria-selected="false" tabindex="-1"><i>07</i>StoryLens</button>
     </div>
     <div class="gpanels">
       <div class="gpanel on" role="tabpanel" id="gp-thoughtflows" aria-labelledby="gt-thoughtflows">
@@ -476,17 +493,29 @@ html:not(.boot) .veil{opacity:0}
           <div><p class="lead">Where it all began. ThoughtFlows Medical Coding Academy trains graduates for careers in medical coding and healthcare revenue cycle management — the back-office work that keeps hospitals and insurers running around the world.</p><p class="more">The academy was built on one idea: a student should walk out job-ready, not just certified. Classrooms are run by people who have worked in the industry, and every batch is taught with the same goal — a first job in healthcare.</p><div class="gfacts"><div><b>6+</b><span>Branches</span></div><div><b>03</b><span>States</span></div><div><b>Job-ready</b><span>The training goal</span></div></div></div>
           <div class="gwhat"><h4>What we do</h4><ul><li>Medical coding training for life-science and allied-health graduates</li><li>Certification preparation, taught by working professionals</li><li>Revenue cycle management (RCM) fundamentals</li><li>Interview preparation and placement support</li><li>Classroom batches across Tamil Nadu, Telangana and Kerala</li></ul><p class="for"><b>Branches:</b> Saravanampatti, Hopes and Gandhipuram in Coimbatore · Ameerpet and Dilsukhnagar in Hyderabad · Kerala.</p><a class="gcta" href="#contact">Talk to ThoughtFlows <span aria-hidden="true">→</span></a></div>
         </div>
+      </div><div class="gpanel" role="tabpanel" id="gp-thoughtworth" aria-labelledby="gt-thoughtworth">
+        <div class="ghead"><div class="glogo"><img src="assets/logo-thoughtworth.webp" alt="ThoughtWorth Healthcare logo"></div><div><h3>THOUGHTWORTH</h3><p class="tagline">Healthcare Pvt Ltd</p></div></div>
+        <div class="gbody">
+          <div><p class="lead">The group's healthcare services company. ThoughtWorth Healthcare manages the back-office work that keeps providers paid — coding, billing and revenue cycle operations, done accurately and on time.</p><p class="more">It closes the loop that ThoughtFlows opens: people trained in the classroom put their skills to work on live healthcare accounts, under the same standards they learned.</p><div class="gfacts"><div><b>RCM</b><span>Revenue cycle focus</span></div><div><b>Accuracy</b><span>Coding & billing</span></div><div><b>Trained</b><span>In-house talent</span></div></div></div>
+          <div class="gwhat"><h4>What we do</h4><ul><li>Medical coding and documentation review</li><li>Medical billing and claims management</li><li>Accounts receivable and denial follow-up</li><li>Healthcare revenue cycle management (RCM)</li><li>A career path for trained coders</li></ul><p class="for"><b>Made for:</b> hospitals, clinics and healthcare organisations that want reliable revenue cycle support.</p><a class="gcta" href="#contact">Talk to ThoughtWorth <span aria-hidden="true">→</span></a></div>
+        </div>
       </div><div class="gpanel" role="tabpanel" id="gp-thoughtspace" aria-labelledby="gt-thoughtspace">
         <div class="ghead"><div class="glogo"><img src="assets/logo-thoughtspace.webp" alt="ThoughtSpace logo"></div><div><h3>THOUGHTSPACE</h3><p class="tagline">Where Ideas Find Their Space</p></div></div>
         <div class="gbody">
           <div><p class="lead">A coworking space for people who build things. ThoughtSpace gives founders, freelancers and small teams a professional place to work without the cost and commitment of their own office.</p><p class="more">Its four words say what it is for: train, work, create, grow. It is a place to run a workshop in the morning, close a client in the afternoon and plan the next quarter in the evening.</p><div class="gfacts"><div><b>Train</b><span>Workshops & sessions</span></div><div><b>Work</b><span>Desks & cabins</span></div><div><b>Grow</b><span>A community of builders</span></div></div></div>
           <div class="gwhat"><h4>What we do</h4><ul><li>Dedicated desks and private cabins</li><li>Meeting and training rooms</li><li>A professional address for growing businesses</li><li>Space for workshops, batches and events</li><li>A community of founders, freelancers and creators</li></ul><p class="for"><b>Made for:</b> startups, freelancers, remote teams and trainers who need a desk, a room or a stage.</p><a class="gcta" href="#contact">Talk to ThoughtSpace <span aria-hidden="true">→</span></a></div>
         </div>
-      </div><div class="gpanel" role="tabpanel" id="gp-talentera" aria-labelledby="gt-talentera">
-        <div class="ghead"><div class="glogo"><img src="assets/logo-talentera.webp" alt="Talentera logo"></div><div><h3>TALENTERA</h3><p class="tagline">The Era of Talent Begins Here</p></div></div>
+      </div><div class="gpanel" role="tabpanel" id="gp-foundryx" aria-labelledby="gt-foundryx">
+        <div class="ghead"><div class="glogo"><img src="assets/logo-foundryx.webp" alt="FoundryX logo"></div><div><h3>FOUNDRYX</h3><p class="tagline">Where Founders Are Forged</p></div></div>
         <div class="gbody">
-          <div><p class="lead">A verified-talent hiring platform for Healthcare RCM. Talentera takes the guesswork out of hiring by checking every candidate across a structured, multi-stage process before an employer ever sees the profile.</p><p class="more">Candidates who score 75 or more across the stages earn the Talentera Verified gold badge — a single signal that tells an employer the profile has already been checked.</p><div class="gfacts"><div><b>08</b><span>Verification stages</span></div><div><b>75+</b><span>Score for the badge</span></div><div><b>RCM</b><span>Healthcare focus</span></div></div></div>
-          <div class="gwhat"><h4>What we do</h4><ul><li>Eight-stage candidate verification, scored out of 100</li><li>The Talentera Verified gold badge for high scorers</li><li>Video introductions and skill checks</li><li>A built-in resume builder with ready templates</li><li>A shortlist of job-ready healthcare talent for employers</li></ul><p class="for"><b>Made for:</b> healthcare RCM employers who want hire-ready people, and candidates who want their skills to speak first.</p><a class="gcta" href="#contact">Talk to Talentera <span aria-hidden="true">→</span></a></div>
+          <div><p class="lead">A launchpad for people who want to build something of their own. FoundryX takes first-time founders from an idea to a working business — with structure, mentoring and the group's own playbook behind them.</p><p class="more">Every company in this group was built from scratch. FoundryX passes that experience on, so the next founder doesn't have to learn every lesson the hard way.</p><div class="gfacts"><div><b>Idea</b><span>Where it starts</span></div><div><b>Build</b><span>Hands-on mentoring</span></div><div><b>Launch</b><span>A working business</span></div></div></div>
+          <div class="gwhat"><h4>What we do</h4><ul><li>Idea validation and business planning</li><li>Mentoring from founders who have built companies</li><li>Branding, marketing and media support from the group</li><li>Workspace and community at ThoughtSpace</li><li>A clear path from idea to launch</li></ul><p class="for"><b>Made for:</b> aspiring and early-stage founders who are ready to turn an idea into a company.</p><a class="gcta" href="#contact">Talk to FoundryX <span aria-hidden="true">→</span></a></div>
+        </div>
+      </div><div class="gpanel" role="tabpanel" id="gp-brandforge" aria-labelledby="gt-brandforge">
+        <div class="ghead"><div class="glogo"><img src="assets/logo-brandforge.webp" alt="BrandForge logo"></div><div><h3>BRANDFORGE</h3><p class="tagline">Turning Ideas Into Digital Power</p></div></div>
+        <div class="gbody">
+          <div><p class="lead">The group's digital marketing agency. BrandForge builds how a business looks, ranks and sells online — from brand identity and search rankings to websites, content and paid campaigns.</p><p class="more">It works as five studios under one roof — Identity Forge, Rank Forge, Web Foundry, Story Smithy and Ignition Ads — so every part of a brand's digital presence is handled by a specialist team.</p><div class="gfacts"><div><b>05</b><span>Specialist studios</span></div><div><b>SEO</b><span>Search-first growth</span></div><div><b>Digital</b><span>Web, content & ads</span></div></div></div>
+          <div class="gwhat"><h4>What we do</h4><ul><li>Identity Forge — brand identity and design</li><li>Rank Forge — SEO and search visibility</li><li>Web Foundry — websites and web development</li><li>Story Smithy — content and social media</li><li>Ignition Ads — performance marketing and paid ads</li></ul><p class="for"><b>Made for:</b> businesses and institutions that want to be found, chosen and remembered online.</p><a class="gcta" href="#contact">Talk to BrandForge <span aria-hidden="true">→</span></a></div>
         </div>
       </div><div class="gpanel" role="tabpanel" id="gp-sonic" aria-labelledby="gt-sonic">
         <div class="ghead"><div class="glogo"><img src="assets/logo-sonic.webp" alt="Sonic Prints logo"></div><div><h3>SONIC PRINTS</h3><p class="tagline">Your complete branding partner</p></div></div>
@@ -512,9 +541,9 @@ html:not(.boot) .veil{opacity:0}
     <span class="cap red rv">Chapter 04 — The Man</span>
     <h2 id="ah" class="rv d1">BUILDER<br>OF <em>SYSTEMS.</em></h2>
     <blockquote class="rv d1">“Don't just build a company. Build the system that builds the next one.”</blockquote>
-    <p class="body rv d2">Balamurali co-founded ThoughtFlows Medical Coding Academy and grew it into a group that now trains, houses, hires, brands and tells the story of the people it serves. His way of working is the same across all five: find the bottleneck, build the system that removes it, and hand it to a team that can run it.</p>
+    <p class="body rv d2">Balamurali co-founded ThoughtFlows Medical Coding Academy and grew it into a group that now trains, employs, houses, launches, markets, brands and tells the story of the people it serves. His way of working is the same across all seven: find the bottleneck, build the system that removes it, and hand it to a team that can run it.</p>
     <div class="stats rv d3">
-      <div class="stat"><b>05</b><span class="cap">Companies</span></div>
+      <div class="stat"><b>07</b><span class="cap">Companies</span></div>
       <div class="stat"><b>03</b><span class="cap">States</span></div>
       <div class="stat"><b>6<sup>+</sup></b><span class="cap">Academy branches</span></div>
     </div>
@@ -526,13 +555,15 @@ html:not(.boot) .veil{opacity:0}
   <div class="pin">
     <div class="sechead">
       <div><span class="cap red">Chapter 05 — The Ecosystem</span><h2 id="eh">ONE <em>JOURNEY.</em></h2></div>
-      <p>Five companies, one path. A learner can train, get verified, find work, build a brand and have the story told — without leaving the group.</p>
+      <p>Seven companies, one path. A learner can train, find work, start a company, grow it online, build a brand and have the story told — without leaving the group.</p>
     </div>
     <div class="rail" id="rail">
       <div class="line"><i></i></div>
       <div class="node"><span class="dot"><img src="assets/mark-thoughtflows.webp" alt="ThoughtFlows"></span><span class="verb">LEARN</span><span class="cap who">ThoughtFlows</span><p>Industry-ready medical coding training.</p></div>
-      <div class="node"><span class="dot"><img src="assets/mark-talentera.webp" alt="Talentera"></span><span class="verb">GET HIRED</span><span class="cap who">Talentera</span><p>Verified talent, matched to the right role.</p></div>
+      <div class="node"><span class="dot"><img src="assets/mark-thoughtworth.webp" alt="ThoughtWorth"></span><span class="verb">GO PRO</span><span class="cap who">ThoughtWorth</span><p>Real healthcare work, real careers.</p></div>
       <div class="node"><span class="dot wide"><img src="assets/mark-thoughtspace.webp" alt="ThoughtSpace"></span><span class="verb">WORK</span><span class="cap who">ThoughtSpace</span><p>A desk, a team, a place to grow.</p></div>
+      <div class="node"><span class="dot"><img src="assets/mark-foundryx.webp" alt="FoundryX"></span><span class="verb">LAUNCH</span><span class="cap who">FoundryX</span><p>An idea, forged into a company.</p></div>
+      <div class="node"><span class="dot"><img src="assets/mark-brandforge.webp" alt="BrandForge"></span><span class="verb">GROW</span><span class="cap who">BrandForge</span><p>Found, chosen and remembered online.</p></div>
       <div class="node"><span class="dot"><img src="assets/mark-sonic.webp" alt="Sonic Prints"></span><span class="verb">BE SEEN</span><span class="cap who">Sonic Prints</span><p>A brand people recognise.</p></div>
       <div class="node"><span class="dot"><img src="assets/mark-storylens.webp" alt="StoryLens"></span><span class="verb">TELL IT</span><span class="cap who">StoryLens</span><p>The story, on screen.</p></div>
     </div>
@@ -547,15 +578,17 @@ html:not(.boot) .veil{opacity:0}
   <div class="who" aria-hidden="true"><img src="assets/portrait.webp" alt="" loading="lazy"></div>
   <div class="rim" aria-hidden="true"></div>
   <p class="corner tl">Ideas<br>Institutions<br>People<br>Real impact</p>
-  <p class="corner tr">Five companies<br>One vision<br>A brighter<br>tomorrow</p>
+  <p class="corner tr">Seven companies<br>One vision<br>A brighter<br>tomorrow</p>
   <p class="corner ml">“Build<br>the system.<br>Then let it<br>build.”</p>
   <p class="corner br">Learn<br>Build<br>Hire<br>Repeat</p>
   <div class="foot">
     <a class="cta" href="mailto:dm@thoughtflows.in?subject=Hello%20Balamurali">GET IN TOUCH <span aria-hidden="true">→</span></a>
     <ul>
       <li><a href="#ventures">ThoughtFlows</a></li>
+      <li><a href="#ventures">ThoughtWorth</a></li>
       <li><a href="#ventures">ThoughtSpace</a></li>
-      <li><a href="#ventures">Talentera</a></li>
+      <li><a href="#ventures">FoundryX</a></li>
+      <li><a href="#ventures">BrandForge</a></li>
       <li><a href="https://sonicprints.in" target="_blank" rel="noopener">Sonic Prints</a></li>
       <li><a href="#ventures">StoryLens</a></li>
     </ul>
@@ -716,7 +749,7 @@ html:not(.boot) .veil{opacity:0}
     if (innerWidth <= 760) p = Math.min(1, Math.max(0, (innerHeight * .75 - rail.getBoundingClientRect().top) / rail.offsetHeight));
     else p = Math.min(1, Math.max(0, -r.top / (eco.offsetHeight - innerHeight) * 1.15));
     rail.style.setProperty('--p', p.toFixed(3));
-    nodes.forEach((n, i) => n.classList.toggle('on', p >= i / 4 - .02));
+    nodes.forEach((n, i) => n.classList.toggle('on', p >= i / (nodes.length - 1) - .02));
     /* active nav */
     let cur = 'home';
     $$('main > section[id]').forEach(s => { if (s.getBoundingClientRect().top < innerHeight * .45) cur = s.id; });
@@ -744,7 +777,7 @@ html:not(.boot) .veil{opacity:0}
       if (d) { e.preventDefault(); pick(gtabs[(i + d + gtabs.length) % gtabs.length], true); }
     });
   });
-  const ids = ['thoughtflows', 'thoughtspace', 'talentera', 'sonic', 'storylens'];
+  const ids = ['thoughtflows', 'thoughtworth', 'thoughtspace', 'foundryx', 'brandforge', 'sonic', 'storylens'];
   $$('#deck .card').forEach((c, i) => { c.style.cursor = 'pointer'; c.addEventListener('click', e => { if (e.target.closest('a')) return; pick($('#gt-' + ids[i])); $('#group').scrollIntoView({ behavior: 'smooth' }); }); });
 
   /* mobile menu */
